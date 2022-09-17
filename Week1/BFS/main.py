@@ -19,11 +19,9 @@ class Graph:
                 visited[start] = True
             if len(queue) != 0:
                 start = queue.pop(0)
-                # print(start)
                 for i in self.graph[start]:
                     if visited[i] != True and i not in queue:
                         queue.append(i)
-                # print(queue)
             idx += 1
 
     def printGraph(self):
