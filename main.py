@@ -1,2 +1,2 @@
 myList = [1, 2, 3, 4, 5]
-print(myList.index(3))
+print(myList[myList.index(3):])
