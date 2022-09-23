@@ -1,6 +1,3 @@
-import re
-
-
 class Graph:
 
 	def __init__(self, n):
@@ -33,7 +30,6 @@ class Graph:
 				idxGraph = i
 		if minPath == 0:
 			print("(" + str(start + 1) + " ," + str(self.hold[0] + 1) + ")" + " = " + str(self.res + self.graph[start][0]))
-			# print(f"({str(start + 1)}, {str(self.hold[0][0])}) = {str(self.res + self.graph[self.hold[0]][0])}")
 		else:
 			print((start + 1, idxGraph + 1), end="--> ")
 		self.hold.append(start)
